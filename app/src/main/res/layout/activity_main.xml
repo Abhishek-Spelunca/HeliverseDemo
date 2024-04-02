@@ -7,8 +7,26 @@
     android:background="@drawable/back"
 
 
-
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="192dp"
+        android:layout_height="224dp"
+        android:background="@drawable/bc"
+        android:paddingStart="30dp"
+        android:shadowColor="#C6B731"
+        android:text="Clicking Continue, I Agree That I Am At Least 14 Years Old"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.184"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -18,30 +36,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="-23dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-26dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="192dp"
-        android:layout_height="224dp"
-        android:background="@drawable/bc"
-        android:paddingStart="10dp"
-        android:shadowColor="#C6B731"
-        android:shadowDx="100"
-        android:shadowDy="100"
-        android:shadowRadius="40"
-        android:text="                                               By Clicking Continue, I Agree That I Am At Least 14 Years Old"
-        android:textAlignment="viewStart"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        tools:layout_editor_absoluteX="168dp"
-        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
@@ -50,11 +47,12 @@
         android:background="@drawable/button2"
         android:text="No, I'm not 14 "
         android:textColor="@color/pink"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="188dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.908"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
@@ -65,11 +63,11 @@
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="188dp" />
-
+        app:layout_constraintVertical_bias="0.473"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -83,19 +81,19 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/pl" />
 
+
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="360dp"
-        android:layout_height="693dp"
+        android:layout_width="345dp"
+        android:layout_height="600dp"
+        android:layout_marginEnd="156dp"
         android:rotationY="-180"
-        android:textAlignment="textEnd"
-        android:textDirection="firstStrongRtl"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.763"
         app:srcCompat="@drawable/terms"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-74dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -113,14 +111,15 @@
         android:id="@+id/textView"
         android:layout_width="221dp"
         android:layout_height="66dp"
-        android:layout_marginTop="100dp"
         android:shadowColor="@color/pink"
         android:text="Are U 14 Years or Older?"
         android:textAlignment="center"
         android:textColor="@color/pink"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
